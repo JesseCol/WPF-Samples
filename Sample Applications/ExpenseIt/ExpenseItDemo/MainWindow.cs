@@ -72,11 +72,16 @@ namespace ExpenseItDemo
 
         private void commandBindingAboutCommand_Executed(object sender, ExecutedRoutedEventArgs e)
         {
+            var w = Microsoft.UI.Windowing.AppWindow.Create();
+            w.Show();
+            /*
             MessageBox.Show(
                 "ExpenseIt Standalone Sample Application, by the WPF SDK",
                 "ExpenseIt Standalone",
                 MessageBoxButton.OK,
                 MessageBoxImage.Information);
+                */
+
         }
 
         private void employeeTypeRadioButtons_SelectionChanged(object sender, SelectionChangedEventArgs e)
