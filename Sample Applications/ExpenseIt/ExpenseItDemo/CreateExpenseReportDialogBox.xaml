@@ -4,7 +4,7 @@
     x:Class="ExpenseItDemo.CreateExpenseReportDialogBox"
     xmlns:localValidation="clr-namespace:ExpenseItDemo.Validation"
     DataContext="{StaticResource ExpenseData}"
-    
+    Icon="Watermark.png"
     Title="Create Expense Report"
     MinWidth="600" MinHeight="500"
     SizeToContent="WidthAndHeight"
