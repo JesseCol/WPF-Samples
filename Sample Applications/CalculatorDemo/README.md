@@ -32,4 +32,6 @@ Also see that we had to add a dotnet9 entry to our nuget.config, we can remove t
 
 To make the app build with .net 9, we change the csproj file to use net9.0 as the TargetFramework.
 
+## Commit 2: Use the new WPF Fluent Resource Dictionary (calc_update_fluent)
 
+For our app to use the new styles, we need to add the Fluent ResourceDictionary to our Application's merged ResourceDictionary.  See App.xaml.
