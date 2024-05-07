@@ -21,4 +21,15 @@ The easiest way to use these samples without using Git is to download the zip fi
 ### Deploying and running the sample
 - To debug the sample and then run it, press F5 or select Debug >  Start Debugging. To run the sample without debugging, press Ctrl+F5 or selectDebug > Start Without Debugging. 
 
+# Calculator Demo update
+
+This section shows how we updated the Calculator Demo to give it a Win11 look and feel.
+
+## Commit 1: Use .net 9 preview 4 (calc_update_use_dotnet9)
+
+DotNet9 hadn't yet shipped when we made this demo, so we had to use the .net9 preview 4 sdk installer from [here](https://github.com/dotnet/installer).
+Also see that we had to add a dotnet9 entry to our nuget.config, we can remove this once preview 4 ships publicly.
+
+To make the app build with .net 9, we change the csproj file to use net9.0 as the TargetFramework.
+
 

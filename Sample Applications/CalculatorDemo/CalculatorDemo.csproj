@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <!-- calc_update_use_dotnet9: Update TargetFramework to net9.0.  This makes our app use .net9. -->
+    <TargetFramework>net9.0-windows</TargetFramework>
     <UseWpf>true</UseWpf>
     <EnableDefaultItems>false</EnableDefaultItems>
   </PropertyGroup>
