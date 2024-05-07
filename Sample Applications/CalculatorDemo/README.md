@@ -35,3 +35,15 @@ To make the app build with .net 9, we change the csproj file to use net9.0 as th
 ## Commit 2: Use the new WPF Fluent Resource Dictionary (calc_update_fluent)
 
 For our app to use the new styles, we need to add the Fluent ResourceDictionary to our Application's merged ResourceDictionary.  See App.xaml.
+
+## Commit 3: Now that the new styles are applied, make some tweaks to add polish (calc_update_tweaks)
+
+We need to make a few tweaks, mostly for layout, to make things look nice:
+* We make the default Button style set Horizontal and VerticalAlignment to stretch so that each button fills its grid cell.  We add a margin
+too so that the buttons have a little space between them.
+* We remove the hardcoded height of the Menu bar at the top so that the menu items are fully visible.
+* We increase the default size of the Window, since the new styles tend to use larger text sizes.
+* We define a "GrayButton" Style for all the gray buttons in the calculator UI.  We set a background that is gray and translucent so that
+the mica background is visible through it.
+* We give the "=" button the background and foreground of an accent button.
+* On the TextBoxes, we made the text a little larger and the border more subtle.
